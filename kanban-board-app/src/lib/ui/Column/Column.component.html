@@ -1,0 +1,11 @@
+<!-- Toolbar -->
+<div class="column">
+  <h4 [textContent]="columnName"></h4>
+  <input
+    *ngFor="let item of Items"
+    class="input"
+    [placeholder]="item"
+    type="text"
+  />
+  <button (click)="addItem()" class="input" id="button">+</button>
+</div>
