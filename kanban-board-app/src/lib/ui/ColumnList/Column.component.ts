@@ -7,9 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class Column {
   @Input()
-  columnName = 'My Board';
-  addItem() {
-    this.Items.push('');
+  columnName: string;
+  getName() {
+    this.items.push('new Column');
   }
-  Items = ['First Input', 'Second Input', 'Third Input'];
+  items = ['First Item', 'Second Item', 'Third Item'];
 }

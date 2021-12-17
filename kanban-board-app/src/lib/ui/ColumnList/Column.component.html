@@ -1,0 +1,6 @@
+<!-- Toolbar -->
+<div class="column">
+  <h4 class="content" [textContent]="columnName"></h4>
+  <Item class="content" *ngFor="let item of items" [itemName]="item"></Item>
+  <button class="content button" (click)="getName()">+</button>
+</div>
